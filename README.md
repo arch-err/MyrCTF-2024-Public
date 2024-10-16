@@ -1,9 +1,9 @@
-![logo](./Assets/Banner.png)
-
 # MyrCTF 2024
 
-MyrCTF is a CTF created and hosted by [@arch-err](https://github.com/arch-err), [@jabb4](https://github.com/jabb4), and [@eightheart](https://github.com/eightheart)
+![logo](./Assets/Banner.png)
 
+---
+MyrCTF is a CTF created and hosted by [@arch-err](https://github.com/arch-err), [@jabb4](https://github.com/jabb4), and [@eightheart](https://github.com/eightheart)
 
 
 ## Contributors
@@ -39,7 +39,7 @@ We have tried to make most of the challenges accessible/playable from the conten
 ### Pain
 - Reverse-Shell made by [@arch-err](https://github.com/arch-err)
 - Pling Plong Pling Plong made by `<redacted>`
-- WeirdTicTacToe made by **Joar**
+- [WeirdTicTacToe](./Challenges/WeirdTicTacToe) made by **Joar**
 
 
 ### Web
