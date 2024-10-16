@@ -1,0 +1,17 @@
+{{- range .Values.challenges }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .name }}
+spec:
+  type: NodePort
+  ports:
+    - name: {{ .name }}
+      port: {{ .containerPort }}
+      targetPort: {{ .containerPort }}
+      nodePort: {{ .nodePort }}
+      protocol: TCP
+  selector:
+    app.kubernetes.io/name: {{ .name }}
+---
+{{- end }}

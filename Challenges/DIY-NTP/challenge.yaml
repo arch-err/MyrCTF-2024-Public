@@ -1,0 +1,12 @@
+name: DIY-NTP
+author: eightheart
+message: |-
+  Under en normal nätskann mot Cerebri upptäckte operatör ||B0ll3n|| en publik NTP, men något med den verkar lite off. Undersök och exploatera om möjligt.
+topics:
+  - Pwn
+initial_value: <points>
+flag: MyrCTF{W0w-v1lK3n-h4xx4r3}
+files: DIY-NTP
+solve:
+  instruction: |-
+    Hack it, classically. You know, buffer overflow and shizzles.

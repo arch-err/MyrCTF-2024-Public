@@ -1,0 +1,11 @@
+Difficulty? Yes.
+
+# How to solve
+
+1. Watch the video
+2. Identify the segment where *the static* takes over
+3. Extract the audio file from the mp4
+    - ffmpeg -i EP1100.mp4 audio.mp3
+4. Analyse using audio-media using ex. Audacity
+5. Inspect in spectogram view
+6. Find flag

@@ -1,0 +1,21 @@
+name: Fisk
+author: arch-err
+message: |-
+  Vi har en kontakt som arbetar på RC som gått med på att hjälpa oss under denna operation, en "insider" så att säga. Denne individ vägrar dock besvara våra fårgor genom vanliga meddelanden, istället får vi bara memes... Undersök en av dessa memes och försök lista ut vad vår insider menar!
+topics:
+  - Forensics
+  - Warmup
+initial_value: 50
+flag: MyrCTF{ExfiltreraDataGenomMemes}
+files: change_my_mind.jpg
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - steghide
+    - exiftool
+    - yq
+solve:
+  cmd: ./solve.sh
+  dependencies:
+    - steghide
+    - exiftool

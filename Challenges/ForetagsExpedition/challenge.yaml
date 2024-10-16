@@ -1,0 +1,9 @@
+name: FöretagsExpedition
+author: eightheart
+message: |-
+  Den extravagante VDn för Roboti Cerebri har en ytterst begränsad närvaro online. Detta gör honom inte mindre viktig för våra planer, jag menar vårt mål att rädda världen. Hitta honom, och ta reda på allt som finns att veta.
+topics:
+  - OSINT
+initial_value: 50
+flag: MyrCTF{Sat4n_Vilk3n_Uts1kt_r41ght?}
+

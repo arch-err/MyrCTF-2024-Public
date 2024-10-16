@@ -1,0 +1,13 @@
+name: Gunnars Pipande Problem
+author: eightheart
+message: |-
+  Gunnar, ni minns honom? Han hörde av sig till oss via en krypterad koppling. Fråga inte varför vi har den, Kvalificerat hemlig information.
+  Hursomhaver, något verkar ha blivit fel med en av hans senaste lektioner... Kan ni hjälpa honom klura ut vad som hänt?
+topics:
+  - Misc
+initial_value: <points>
+flag: MyrCTF{LjUd_3r0_C00lt_r4ighT?}
+files: ./EP1100.mp4
+generate:
+solve:
+  ./Solution.txt

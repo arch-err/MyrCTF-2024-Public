@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Shell</h1>
+        <div id="div"></div>
+        <form method="post" action="/webshell">
+            <label for="cmd">{{ PS1 }}</label>
+            <input type="text" name="cmd" required><br><br>
+        </form>
+        {% if stdout %}
+        <pre style="color: green;">{{ stdout }}</pre>
+        {% endif %}
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </body>
+</html>

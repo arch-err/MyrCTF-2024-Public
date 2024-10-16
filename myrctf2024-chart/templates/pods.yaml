@@ -1,0 +1,17 @@
+{{- range .Values.challenges -}}
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .name }}
+  labels:
+    app.kubernetes.io/name: {{ .name }}
+spec:
+  automountServiceAccountToken: false
+  containers:
+  - name: {{ .name }}
+    image: {{ $.Values.general.image.repository }}:{{ .image }}
+    imagePullPolicy: {{ $.Values.general.image.pullPolicy }}
+    ports:
+    - containerPort: {{ .containerPort }}
+---
+{{- end }}

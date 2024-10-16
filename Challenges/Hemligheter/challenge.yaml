@@ -1,0 +1,20 @@
+name: Hemligheter
+author: arch-err
+message: |-
+  En av våra medlemmar har exfiltrerat dessa filer från en utvecklares dator. Se om du kan hitta något användbart bland dessa filer!
+topics:
+  - Misc
+initial_value: 500
+flag: MyrCTF{SecretsGittingRevealed}
+files: RC_ClusterSecrets_QA2
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - git
+    - age
+    - sops
+    - kubectl
+solve:
+  cmd: ./solve.sh
+  dependencies:
+    - <dependency>

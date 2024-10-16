@@ -1,0 +1,23 @@
+1:
+Run:
+python pyinstxtractor.py flag.exe
+Comment:
+This extraxts compiled files (gives us main.exe_extracted/main.pyc)
+
+2:
+Run:
+uncompyle6 flag.pyc
+Comment:
+decompiles the flag.pyc back to python code and prints it to stdout
+
+3:
+Comment:
+Get out the flag pices and create a script to try all cobinations
+
+4:
+Run:
+python solve.py
+Comment: Gets a couple strings that matches flag desscription
+
+5:
+Comment: Look through the strings and find Ricks name. Boom flag done

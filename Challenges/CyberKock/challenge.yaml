@@ -1,0 +1,23 @@
+name: CyberKock
+author: arch-err
+message: |-
+  Vi har en stulen prototyp av ett chip som RC utvecklat. Några av våra tekniker har lyckats utläsa vad de påstår ska vara chippets interna logg. Vid första anblick verkar det dock bara vara binär data. Undersök denna data!
+topics:
+  - Cryptography
+initial_value: 500
+flag: MyrCTF{4114_ä15ka3r_cyb3rk0ck3n.}
+files: dm6642_proto.dat
+generate:
+  steps:
+    - https://gchq.github.io/CyberChef/#recipe=To_Hex('Space',0)&input=TVlSQ1RGezQxMTRf5DE1a2Ezcl9jeWIzcmswY2szbi59
+    - https://gchq.github.io/CyberChef/#recipe=ROT13(false,true,true,13)To_Base32('A-Z2-7%3D')To_Hex('Percent',0)To_Base64('A-Za-z0-9%2B/%3D')To_Binary('None',8)&input=WyAgIDU0LjU0MTY1N10gSW5pdGlhbGl6aW5nIFhGUk0gbmV0bGluayBzb2NrZXQKWyAgIDU0LjY4OTM2OF0gcjgxMjUgMi03LjQ6MS4wIGVucDBzOTBmMHU2ZjQ6IGNhcnJpZXIgb24KWyAgMTc5LjU0NDYzOV0gQ29kZTogZTUgMzIgMDUgMDAgNDggOGIgYmIgYzAgMDAgMDAgMDAgNDggOGQgMzUgZDMgYWQgMDIgMDAgZmYgMTUgMTEgNDAgMDUgMDAgNDggOGIgOTMgYzAgMDAgMDAgMDAgNDggOGIgNWQgZjggNDggOGQgMzUgYWYgMWMgMDUgMDAgPDQ4PiA4YiA3OCAxOCBjOSBmZiAyNSA1NCAyZCAwNSAwMCAwZiAxZiA0MCAwMCBmMyAwZiAxZSBmYSA1NSA0OCA4OQpbNDU4ODEuMjgxMDg5XSB3bG8xOiBDb25uZWN0aW9uIHRvIEFQIGIzOjhiOmE0OjQzOmIwOjVjIGxvc3QKWzE1Mjk5LjE0Njc1OF0gaTkxNSAwMDAwOjAwOjAyLjA6IFtkcm1dIFt0cmFuc2NvZGVyIEFdIFBTUiBhdXggZXJyb3IKWzE1Mjk5LjE0Njc4Nl0gaTkxNSAwMDAwOjAwOjAyLjA6IFs0ZCA1OSA1MiA0MyA1NCA0NiA3YiAzNCAzMSAzMSAzNCA1ZiBlNCAzMSAzNSA2YiA2MSAzMyA3MiA1ZiA2MyA3OSA2MiAzMyA3MiA2YiAzMCA2MyA2YiAzMyA2ZSAyZSA3ZF0gW3RyYW5zY29kZXIgQV0gUFNSIGF1eCBlcnJvcgpbMTYzMzYuMzYwNDkwXSBwZXJmOiBpbnRlcnJ1cHQgdG9vayB0b28gbG9uZyAoNDAxNyA%2BIDM5NDYpLCBsb3dlcmluZyBrZXJuZWwucGVyZl9ldmVudF9tYXhfc2FtcGxlX3JhdGUgdG8gNDk1MDAKWyAgIDU4LjE0MTg1Nl0gd2xvMTogYXV0aGVudGljYXRlZApbICAgNTguMTg1NjQ0XSB3bG8xOiBhc3NvY2lhdGVkClsgICA1OC4zOTA2NzJdIHdsbzE6IExpbWl0aW5nIFRYIHBvd2VyIHRvIDIzICgyMyAtIDApIGRCbSBhcyBhZHZlcnRpc2VkIGJ5IGIzOjhiOmE0OjQzOmIwOjVjCg
+    - Gemini generates fake data
+    - Insert result from last cyberchef into fake json data
+    - https://gchq.github.io/CyberChef/#recipe=Bzip2_Compress(9,30)To_Binary('Space',8) on fake data
+solve:
+  steps:
+    - ROT13https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',8)Bzip2_Decompress(false) on challenge file
+    - extract the big binary blob
+    - https://gchq.github.io/CyberChef/#recipe=From_Binary('Space',8)From_Base64('A-Za-z0-9%2B/%3D',true,false)From_Hex('Percent')From_Base32('A-Z2-7%3D',true)ROT13(false,true,true,13)ROT13(false,false,true,4) on the binary blob
+    - extract second hex blob
+    - https://gchq.github.io/CyberChef/#recipe=From_Hex('Auto')&input=NGQgNTkgNTIgNDMgNTQgNDYgN2IgMzQgMzEgMzEgMzQgNWYgZTQgMzEgMzUgNmIgNjEgMzMgNzIgNWYgNjMgNzkgNjIgMzMgNzIgNmIgMzAgNjMgNmIgMzMgNmUgMmUgN2Q&oeol=VT

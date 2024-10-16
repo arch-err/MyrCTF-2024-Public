@@ -1,0 +1,100 @@
+.class
+{
+	display: block;
+	color: #00ff00;
+}
+
+/* You're getting desperate. */
+* {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	padding-bottom: 0;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/* so am i. */
+
+
+.header {
+	width: 100%;
+	height: 4rem;
+	background-color: darkred;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 0;
+
+}
+.alternatives {
+	width: 9%;
+	text-align: center;
+	float: left;
+	font-weight: bold;
+	font-size: 2rem;
+	height: inherit;
+}
+.alternatives:hover {
+	background-color: red;
+	height: inherit;
+	cursor: pointer;
+}
+.alternatives p {
+	padding-top: 8%;
+}
+.clearfix {
+	clear:both;
+}
+
+/* i do not have a license to frontend ok? */
+.sorry {
+	width: 1%;
+	height: auto;
+	float:left;
+	color: white
+	
+}
+.main-content {
+	width: 64%;
+	float: left;
+	height: auto;
+	text-align: center;
+	border: black 1px dotted;
+}
+.not-main-content {
+	width: 34.78%;
+	float: left;
+	height: auto;
+	text-align: center;
+	border: black 1px dotted;
+}
+
+.content-box {
+	padding: 1%;
+}
+#No-Account-Text {
+	color: blue;
+	cursor: pointer;
+}
+
+#SignUpBox {
+	display: none;
+}
+.post-box {
+	text-align: center;
+	border: black 1px dotted;
+	overflow:visible;
+	width: 100%;
+	margin-bottom: 1%;
+}
+.post-box p {
+	margin:1%;
+	word-wrap: break-word;
+	font-size:1.1em;
+}
+.post-box h3 {
+	text-align: left;
+	text-decoration: underline;
+	margin-left: 2%;
+	margin-top:1%;
+	font-size:1.2em;
+}

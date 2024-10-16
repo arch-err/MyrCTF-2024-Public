@@ -1,0 +1,7 @@
+create and activate a venv with python version 3.8
+
+run:
+$: pip install pyinstaller
+$: pyinstaller --onefile --icon=pirate-flag.ico flag.py
+
+This creates the exe at dist/flag.exe

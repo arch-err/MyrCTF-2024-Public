@@ -1,0 +1,20 @@
+name: Base 2
+author: jabb4
+message: |-
+  Någon på Roboti Cerebri gjorde uträkningar på dosering av ingrediensen.\r\n\r\nNågon på Roboti Cerebri tyckte inte internmail var säkert.\r\n\r\nNågon på Roboti Cerebri är dum i huvudet och använde en konstig jävla algoritm för att dölja informationen.
+  Jag behöver kaffe. Ni behöver lösa detta.
+topics:
+  - Scripting
+initial_value: 500
+flag: MYRCTF{16_32_64}
+files: resultat.encoded
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - python
+    - git
+solve:
+  cmd: ./solve.sh
+  dependencies:
+    - python
+    - git

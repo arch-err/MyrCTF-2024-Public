@@ -1,0 +1,46 @@
+# Default values for myrctf2024.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+general:
+  image:
+    repository: arch3rr/myrctf2024
+    pullPolicy: IfNotPresent
+
+challenges:
+  - name: reverse-shell
+    image: reverse-shell-1.0.0
+    containerPort: 22
+    nodePort: 32011
+  - name: zeit
+    image: zeit-1.0.1
+    containerPort: 8080
+    nodePort: 32012
+  - name: verborgen
+    image: verborgen-1.0.0
+    containerPort: 8888
+    nodePort: 32013
+  - name: tekanna
+    image: tekanna-1.0.0
+    containerPort: 8888
+    nodePort: 32014
+  - name: kakburk
+    image: kakburk-1.0.0
+    containerPort: 8080
+    nodePort: 32015
+  - name: kaninhal
+    image: kaninhal-1.0.0
+    containerPort: 22
+    nodePort: 32016
+  - name: diy-ntp
+    image: diy-ntp-1.0.0
+    containerPort: 321
+    nodePort: 32017
+  - name: funktionelltkul
+    image: funktionelltkul-1.0.0
+    containerPort: 1337
+    nodePort: 32018
+  - name: fuckingsso
+    image: fuckingsso-1.0.1
+    containerPort: 8088
+    nodePort: 32019

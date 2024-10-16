@@ -1,0 +1,10 @@
+name: NeuralNexus
+author: challe
+message: |-
+  Ett framgrävt program, och en gammal licensnyckel; En bortglömd kärlekshistoria? Jag hade analyserat denna, men du har ju inget att göra just nu ändå. Se om du kan gräva fram något av värde.
+
+topics:
+  - Reverse Engineering
+
+initial_value: 500
+flag: MyrCTF{L1c3ns3r_k4n_v4ra_bRa_aTT_k4sTa}

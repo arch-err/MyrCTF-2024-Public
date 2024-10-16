@@ -1,0 +1,49 @@
+FROM alpine
+
+ADD tmp/0/ /chal/
+ADD tmp/1/ /chal/
+ADD tmp/2/ /chal/
+ADD tmp/3/ /chal/
+ADD tmp/4/ /chal/
+ADD tmp/5/ /chal/
+ADD tmp/6/ /chal/
+ADD tmp/7/ /chal/
+ADD tmp/8/ /chal/
+ADD tmp/9/ /chal/
+ADD tmp/10/ /chal/
+ADD tmp/11/ /chal/
+ADD tmp/12/ /chal/
+ADD tmp/13/ /chal/
+ADD tmp/14/ /chal/
+ADD tmp/15/ /chal/
+ADD tmp/16/ /chal/
+ADD tmp/17/ /chal/
+ADD tmp/18/ /chal/
+ADD tmp/19/ /chal/
+ADD tmp/20/ /chal/
+ADD tmp/21/ /chal/
+ADD tmp/22/ /chal/
+ADD tmp/23/ /chal/
+ADD tmp/24/ /chal/
+ADD tmp/25/ /chal/
+ADD tmp/26/ /chal/
+ADD tmp/27/ /chal/
+ADD tmp/28/ /chal/
+ADD tmp/29/ /chal/
+ADD tmp/30/ /chal/
+ADD tmp/31/ /chal/
+ADD tmp/32/ /chal/
+ADD tmp/33/ /chal/
+ADD tmp/34/ /chal/
+ADD tmp/35/ /chal/
+ADD tmp/36/ /chal/
+ADD tmp/37/ /chal/
+ADD tmp/38/ /chal/
+ADD tmp/39/ /chal/
+ADD tmp/40/ /chal/
+ADD tmp/41/ /chal/
+ADD tmp/42/ /chal/
+ADD tmp/43/ /chal/
+ADD tmp/44/ /chal/
+
+CMD [ "echo", "can you find the flag in /chal?" ]

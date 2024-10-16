@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <!-- <div id="blocker" -->
+    <body>
+        <h1>Login</h1>
+        <div id="center">
+            <form id="pin-form" method="post" action="/auth">
+                <input type="password" id="pin" name="pin" maxlength="4" onkeypress="return false;" required>
+            </form>
+            <div id="row">
+                <button onclick="appendNumber(1)">1</button>
+                <button onclick="appendNumber(2)">2</button>
+                <button onclick="appendNumber(3)">3</button>
+            </div>
+            <div id="row">
+                <button onclick="appendNumber(4)">4</button>
+                <button onclick="appendNumber(5)">5</button>
+                <button onclick="appendNumber(6)">6</button>
+            </div>
+            <div id="row">
+                <button onclick="appendNumber(7)">7</button>
+                <button onclick="appendNumber(8)">8</button>
+                <button onclick="appendNumber(9)">9</button>
+            </div>
+            <div id="row">
+                <button onclick="appendNumber(0)">0</button>
+                <button onclick="backspace()">⌫</button>
+                <button onclick="enter()">↵</button>
+            </div>
+            {% if error %}
+            <p style="color: red;">{{ error }}</p>
+            {% endif %}
+        </div>
+    </body>
+
+    <script>
+        function appendNumber(number) {
+            const pinInput = document.getElementById('pin');
+            if ( pinInput.value.length < 4) {
+                pinInput.value += number;
+            }
+        }
+        function backspace() {
+            const pinInput = document.getElementById('pin');
+            pinInput.value = pinInput.value.substring( 0, pinInput.value.length - 1 );
+        }
+        function enter() {
+            document.getElementById('pin-form').submit();
+        }
+
+    </script>
+</html>

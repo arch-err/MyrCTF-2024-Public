@@ -1,0 +1,10 @@
+name: ÄrViLive?
+author: eightheart
+message: |-
+  Släpp det du håller på med, detta är på riktigt. Klockan 16:05, ca 480m från platsen ni hittade "flaggan" kommer en överlämnning att ske. Vad vet vi inte, men viktigt är det säkert! Identifiera och anmäl objektet.
+  (Flaggan är objektet som lämnas över enligt MyrCTF{objekt} syntax)
+  *Tiden för utmaningen har passerat, och går således inte att lösa.*
+topics:
+  - OSINT
+initial_value: 50
+flag: MyrCTF{stekpanna}

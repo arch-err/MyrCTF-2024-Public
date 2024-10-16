@@ -1,0 +1,15 @@
+name: Verborgen
+author: arch-err
+message: |-
+  Ännu en skum sida, borde undersökas...
+topics:
+  - Boot2Root
+initial_value: <points>
+flag: MyrCTF{Sååå_drygt_med_gömda_filer...}
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - yq
+    - docker
+solve:
+  cmd: cat ./solve.md

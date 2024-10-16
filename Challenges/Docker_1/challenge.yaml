@@ -1,0 +1,18 @@
+name: Docker 1
+author: Tok1
+message: |-
+  En av RCs interna container-registrys har knäckts och images har exfiltrerats! Se om denna image kan innehålla några spännande hemligheter.
+topics:
+  - Forensics
+initial_value: <points>
+flag: MyrCTF{You_Found_It_q7y19y391831}
+files: img.tar
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - docker
+    - yq
+solve:
+  cmd: ./solve.sh
+  dependencies:
+    - docker

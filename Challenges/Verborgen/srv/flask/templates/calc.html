@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Super Secret Calculator</h1>
+        <div id="div"></div>
+        <form method="post" action="/calc_6432647836">
+            <label for="calc">{{ PS1 }}</label>
+            <input type="text" name="calc" required><br><br>
+        </form>
+        {% if stdout %}
+        <pre style="color: green;">{{ stdout }}</pre>
+        {% endif %}
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+    </body>
+</html>

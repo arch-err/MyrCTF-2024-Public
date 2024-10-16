@@ -1,0 +1,22 @@
+name: Unknown_exe
+author: jabb4
+message: |-
+  En av de anställda på RC hittade denna exe fil bland sina dokument. Hon vet inte hur den kom dit, och det gör faktiskt inte vi heller! Ta reda på vad filen gör och vad den egentligen innehåller.
+  kan ju inte låta andra aktörer ge sig på vår måltaval...
+topics:
+  - Reverse engineering
+  - Scripting
+initial_value: 500
+flag: MYRCTF{RiCK__AsTLEy}
+files: flag.exe
+generate:
+  cmd: generate.txt
+  dependencies:
+    - python
+    - pyinstaller
+solve:
+  cmd: cat solve.txt
+  dependencies:
+    - python
+    - pyinstxtractor (https://github.com/extremecoders-re/pyinstxtractor)
+    - uncompyle6 (https://github.com/rocky/python-uncompyle6/)

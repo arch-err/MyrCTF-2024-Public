@@ -1,0 +1,15 @@
+name: Jag är en Tekanna
+author: arch-err
+message: |-
+  /( |^)4/ /  :)
+  MyrCTF{<message>}
+topics:
+  - Misc
+initial_value: <points>
+flag: MyrCTF{ivegotclienterrors}
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - docker
+solve:
+  cmd: ./solve.sh

@@ -1,0 +1,21 @@
+name: Base 1
+author: jabb4
+message: |-
+  Alfreed von Norrsprätt fick ett mail med en fil som ska innehålla en viktig ingrediens för vätskan chippet ska ligga i. Vi tycker det är äckligt att chippet ska ligga i någon vätska, men på något sätt ska det facilitera kommunikation mellan chip och hjärna...
+  Tror vi behöver förstå dethär för att stoppa det, så kika på det.
+topics:
+  - Scripting
+  - Warmup
+initial_value: 500
+flag: MYRCTF{DABASE}
+files: ingrediens.encoded
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - python
+    - git
+solve:
+  cmd: ./solve.sh
+  dependencies:
+    - python
+    - git

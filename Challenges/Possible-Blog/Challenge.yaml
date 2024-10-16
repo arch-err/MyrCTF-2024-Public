@@ -1,0 +1,13 @@
+name: Possible-Blog
+author: eightheart
+message: |-
+  Denna utmaning förutsätter avklarad impossible-blog. Okej, snyggt. Du kom faktiskt in. Grattis, du får dela med dig om hur sen... Vänta, är det bara jag eller har kakburken fler kakor än den brukar?
+
+topics:
+  - Web
+
+initial_value: 500
+flag: MyrCTF{W0w_v1Lk3n_fUl_h3M2iDa}
+solve:
+  instruction: |-
+    See Solution.txt in ./solution

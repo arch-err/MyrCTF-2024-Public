@@ -1,0 +1,11 @@
+[   54.541657] Initializing XFRM netlink socketURL Decode
+[   54.689368] r8125 2-7.4:1.0 enp0s90f0u6f4: carrier on
+[   54.824168] overlayfs: fs on '/var/lib/containx/overlay2/l/E5VGLP5PBHZYCIBSBPUKJOV437' does not support filehandles, falling back to xino=off.
+[  179.544639] Code: 4d 79 72 43 54 46 7b 34 31 31 34 5f e4 31 35 6b 61 33 72 5f 63 79 62 33 72 6b 30 63 6b 33 6e 2e 7d 0a
+[45881.281089] wlo1: Connection to AP b3:8b:a4:43:b0:5c lost
+[15299.146758] i915 0000:00:02.0: [drm] [transcoder A] PSR aux error
+[15299.146786] i915 0000:00:02.0: [] [transcoder A] PSR aux error
+[16336.360490] perf: interrupt took too long (4017 > 3946), lowering kernel.perf_event_max_sample_rate to 49500
+[   58.141856] wlo1: authenticated
+[   58.185644] wlo1: associated
+[   58.390672] wlo1: Limiting TX power to 23 (23 - 0) dBm as advertised by b3:8b:a4:43:b0:5c

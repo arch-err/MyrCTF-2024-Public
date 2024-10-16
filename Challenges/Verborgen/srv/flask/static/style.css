@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+body {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#hide-the-truth {
+	width: 7.2em;
+	height: 1.4em;
+	background-color: white;
+	/* outline: 1px solid red; */
+	position: absolute;
+	top: 2em;
+	left: 5em;
+}

@@ -1,0 +1,18 @@
+<!--
+                <h2><?php echo "<h2>Hi " . $currentuser . "!</h2>"; ?></h2>
+                <hr />
+                <br />
+                <a>Visa mina inlägg</a>
+                <br />
+                <br />
+                <hr style="width:66%;text-align:center;margin:auto;" />
+                <br />
+                <form method="POST" action="post.php">
+                    <textarea name="textpost" rows="10" cols="50" placeholder="Skriv ditt inlägg här!" required></textarea>
+                    <br /><br />
+                    <input type="checkbox" value="1" name="private">
+                    <label for="private">Privat inlägg</label>
+                    <br /><br />
+                    <input type="submit" value="Posta!">
+                </form>
+-->

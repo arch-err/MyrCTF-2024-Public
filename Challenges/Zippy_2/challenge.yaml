@@ -1,0 +1,19 @@
+name: Zippy 2
+author: arch-err
+message: |-
+  Ännu ett arkiv... detta ser lite svårare ut.
+topics:
+  - Scripting
+initial_value: 200
+flag: MyrCTF{7zCrackingFTW}
+files: <generated 7z-archive>
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - 7z
+    - yq
+solve:
+  cmd: ./solve.sh <archive.7z>
+  dependencies:
+    - 7z
+    - john

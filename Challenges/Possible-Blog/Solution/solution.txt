@@ -1,0 +1,9 @@
+Löses enligt följande steg.
+
+1. Besök hemsidan, upptäck funktionen att skapa ny användare
+2. Inse att det inte går att lösa frågan om anställningsnummer utan att skripta det
+3. Skripa det, se GenereraAnsNummer.py för en lösning
+4. När kontot väl är skapat, inse att det finns en custom kaka. 
+5. Inse att kakan är baserad på användarnamnet
+6. Ändra till admin
+7. Läs flagga.

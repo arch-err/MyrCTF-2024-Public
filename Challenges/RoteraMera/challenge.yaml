@@ -1,0 +1,14 @@
+name: RoteraMera
+author: arch-err
+message: |-
+  Det är alltid viktigt med uppvärmning!
+  Och om du inte skulle klara någon annan flagga så har du iallafall fått klara en...
+topics:
+  - Crypto
+  - Warmup
+initial_value: 200
+flag: MyrCTF{R073R4_M3R4}
+generate:
+  url: https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,true,13)&input=TXlyQ1RGe1IwNzNSNF9NM1I0fQ
+solve:
+  url: https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,true,13)ROT13(false,false,true,14)&input=WmxlUEdTe0UzMDZFN19aNkU3fQ
