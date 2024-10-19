@@ -3,7 +3,7 @@
 ![logo](./Assets/Banner.png)
 
 ---
-MyrCTF is a CTF created and hosted by [@arch-err](https://github.com/arch-err), [@jabb4](https://github.com/jabb4), and [@eightheart](https://github.com/eightheart)
+MyrCTF is a CTF created and hosted by [@arch-err](https://github.com/arch-err), [@jabb4](https://github.com/jabb4), and [@eightheart](https://app.hackthebox.com/profile/1052332)
 
 
 ## Contributors
@@ -91,7 +91,7 @@ We have tried to make most of the challenges accessible/playable from the conten
 
 ### OSINT
 - [FöretagsExpedition](./Challenges/FöretagsExpedition/) made by [@eightheart](https://app.hackthebox.com/profile/1052332)
-- [ArViLive](./Challenges/ArViLive/) made by [@eightheart](https://app.hackthebox.com/profile/1052332)
+- ÄrViLive made by [@eightheart](https://app.hackthebox.com/profile/1052332)
 
 
 
