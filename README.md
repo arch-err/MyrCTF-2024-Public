@@ -73,7 +73,7 @@ We have tried to make most of the challenges accessible/playable from the conten
 ### Forensics
 - [Docker 1](./Challenges/Docker_1/) made by [@Tok1](https://github.com/tokfrans03)
 - [Fisk](./Challenges/Fisk/) made by [@arch-err](https://github.com/arch-err)
-- [SUS USB](./Challenges/SUS_USB/) made by [@jabb4](https://github.com/jabb4)
+- SUS USB made by [@jabb4](https://github.com/jabb4)
 - [Docker 2](./Challenges/Docker_2/) made by [@Tok1](https://github.com/tokfrans03)
 - Vi glömde avkodarn...  made by `<redacted>`
 

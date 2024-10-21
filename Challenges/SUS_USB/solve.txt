@@ -1,4 +1,0 @@
-1. Base64 decode Desktop112.base64 and save to a zip file.
-2. Extract that zip file and open the terminal in the location of the file called "Local State"
-3. Run then:
-python ..\..\..\decrypt_chrome_password.py

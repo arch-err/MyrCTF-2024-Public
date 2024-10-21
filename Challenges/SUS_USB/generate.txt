@@ -1,5 +1,0 @@
-1. Install a fresh google chrome
-2. Create a login data with the password of the flag
-3. Run this powershell one liner:
-
-$browsers = @("Google\Chrome"); foreach ($browser in $browsers) { $loginDataFiles = Get-ChildItem -Path "$home\AppData\Local\$browser\User Data" -Recurse -Filter "Login Data"; foreach ($loginDataFile in $loginDataFiles) { $browserProfile = ((($loginDataFile.FullName -split "User Data\\" | Select-Object -Last 1) -replace "\\", "-") -replace "Login Data") -replace ".$"; $folder = "$home\extractfile\$browser\$browserProfile"; mkdir $folder ; Copy-Item -Path $loginDataFile.FullName -Destination $folder }}; foreach ($browser in $browsers) {Copy-Item -Path "$home\AppData\Local\$browser\User Data\Local State" -Destination "$home\extractfile\$browser\Local State"}; $zipFilePath = "$home\extractfile.zip"; Compress-Archive -Path "$home\extractfile" -DestinationPath $zipFilePath; Remove-Item -Path "$home\extractfile" -R; $zipFileBytes = [System.IO.File]::ReadAllBytes($zipFilePath); Remove-Item -Path "$zipFilePath"; $zipFileBase64 = [Convert]::ToBase64String($zipFileBytes); echo $zipFileBase64 > Desktop112.base64
